@@ -41,12 +41,14 @@
             // 
             // friendsGridView
             // 
+            this.friendsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.friendsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.friendsGridView.Location = new System.Drawing.Point(24, 252);
             this.friendsGridView.Name = "friendsGridView";
             this.friendsGridView.RowTemplate.Height = 33;
-            this.friendsGridView.Size = new System.Drawing.Size(986, 428);
+            this.friendsGridView.Size = new System.Drawing.Size(686, 428);
             this.friendsGridView.TabIndex = 0;
+            this.friendsGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.friendsGridView_RowHeaderMouseClick);
             // 
             // insertButton
             // 
@@ -111,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 725);
+            this.ClientSize = new System.Drawing.Size(738, 725);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

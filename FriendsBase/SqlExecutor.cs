@@ -11,6 +11,8 @@ namespace FriendsBase
         private SqlCommand command;
         private SqlDataAdapter dataAdapter;
 
+        public int id = 0;
+
         public SqlCommand GetCommand()
         {
             return command;
