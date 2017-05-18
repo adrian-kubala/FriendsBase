@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FriendsBase
@@ -15,16 +7,10 @@ namespace FriendsBase
     {
         private SqlExecutor executor = new SqlExecutor();
 
-
         public MainForm()
         {
             InitializeComponent();
             DisplayData();
-        }
-
-        private void DisplayData()
-        {
-            friendsGridView.DataSource = executor.Select(Properties.Resources.selectFriends);
         }
 
         private void friendsGridView_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -49,13 +35,6 @@ namespace FriendsBase
             }
         }
 
-        private void ClearData()
-        {
-            nameTextBox.Text = "";
-            lastNameTextBox.Text = "";
-            executor.id = 0;
-        }
-
         private void updateButton_Click(object sender, EventArgs e)
         {
             if (TextBoxesAreNotEmpty())
@@ -69,12 +48,6 @@ namespace FriendsBase
             {
                 MessageBox.Show("Proszę wybrać rekord w celu jego aktualizacji");
             }
-        }
-
-        private void RefreshData()
-        {
-            DisplayData();
-            ClearData();
         }
 
         private bool TextBoxesAreNotEmpty()
@@ -93,6 +66,24 @@ namespace FriendsBase
             {
                 MessageBox.Show("Proszę wybrać rekord w celu jego usunięcia!");
             }
+        }
+
+        private void DisplayData()
+        {
+            friendsGridView.DataSource = executor.Select(Properties.Resources.selectFriends);
+        }
+
+        private void ClearData()
+        {
+            nameTextBox.Text = "";
+            lastNameTextBox.Text = "";
+            executor.id = 0;
+        }
+
+        private void RefreshData()
+        {
+            DisplayData();
+            ClearData();
         }
 
     }

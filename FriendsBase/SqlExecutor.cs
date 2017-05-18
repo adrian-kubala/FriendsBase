@@ -1,27 +1,15 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace FriendsBase
 {
     class SqlExecutor
     {
-        public SqlConnection connection = new SqlConnection(Properties.Resources.socialMediaConnectionString);
+        private SqlConnection connection = new SqlConnection(Properties.Resources.socialMediaConnectionString);
         private SqlCommand command;
         private SqlDataAdapter dataAdapter;
 
         public int id = 0;
-
-        public SqlCommand GetCommand()
-        {
-            return command;
-        }
-
-        public SqlDataAdapter GetAdapter()
-        {
-            return dataAdapter;
-        }
 
         public DataTable Select(string commandText)
         {
