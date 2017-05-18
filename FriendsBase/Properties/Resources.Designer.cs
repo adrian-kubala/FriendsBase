@@ -86,5 +86,14 @@ namespace FriendsBase.Properties {
                 return ResourceManager.GetString("socialMediaConnectionString", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UPDATE Znajomy SET Imie_znajomego = @name, Nazwisko_znajomego = @lastName WHERE Id_znajomego = @id.
+        /// </summary>
+        internal static string updateZnajomy {
+            get {
+                return ResourceManager.GetString("updateZnajomy", resourceCulture);
+            }
+        }
     }
 }

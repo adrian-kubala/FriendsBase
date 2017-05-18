@@ -41,8 +41,7 @@ namespace FriendsBase
                 executor.InsertFriend(nameTextBox.Text, lastNameTextBox.Text);
 
                 MessageBox.Show("Wprowadzanie powiodło się.");
-                DisplayData();
-                ClearData();
+                RefreshData();
             }
             else
             {
@@ -64,13 +63,18 @@ namespace FriendsBase
                 executor.UpdateFriend(nameTextBox.Text, lastNameTextBox.Text);
 
                 MessageBox.Show("Aktualizacja wpisu powiodła się.");
-                DisplayData();
-                ClearData();
+                RefreshData();
             }
             else
             {
                 MessageBox.Show("Proszę wybrać rekord w celu jego aktualizacji");
             }
+        }
+
+        private void RefreshData()
+        {
+            DisplayData();
+            ClearData();
         }
 
         private bool TextBoxesAreNotEmpty()

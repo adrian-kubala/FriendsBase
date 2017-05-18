@@ -127,4 +127,7 @@
   <data name="socialMediaConnectionString" xml:space="preserve">
     <value>Data Source=DESKTOP-VGF8T6A\MYSERVER;Initial Catalog=Portal_spolecznosciowy;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False</value>
   </data>
+  <data name="updateZnajomy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updateZnajomy.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
 </root>

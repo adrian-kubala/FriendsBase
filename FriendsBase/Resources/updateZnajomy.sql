@@ -1,0 +1,1 @@
+UPDATE Znajomy SET Imie_znajomego = @name, Nazwisko_znajomego = @lastName WHERE Id_znajomego = @id

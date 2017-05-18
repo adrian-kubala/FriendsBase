@@ -49,7 +49,7 @@ namespace FriendsBase
 
         public void UpdateFriend(string name, string lastName)
         {
-            command = new SqlCommand("UPDATE Znajomy SET Imie_znajomego = @name, Nazwisko_znajomego = @lastName WHERE Id_znajomego = @id", connection);
+            command = new SqlCommand(Properties.Resources.updateZnajomy, connection);
 
             command.Parameters.AddWithValue("@id", id);
             command.Parameters.AddWithValue("@name", name);
