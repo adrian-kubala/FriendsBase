@@ -61,5 +61,25 @@ namespace FriendsBase
 
             id = 0;
         }
+
+        internal bool Delete()
+        {
+            if (id != 0)
+            {
+                command = new SqlCommand("DELETE Znajomy where Id_znajomego = @id", connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

@@ -81,5 +81,19 @@ namespace FriendsBase
         {
             return nameTextBox.Text != "" && lastNameTextBox.Text != "";
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (executor.Delete())
+            {
+                MessageBox.Show("Pomyślnie usunięto wpis.");
+                RefreshData();
+            }
+            else
+            {
+                MessageBox.Show("Proszę wybrać rekord w celu jego usunięcia!");
+            }
+        }
+
     }
 }
