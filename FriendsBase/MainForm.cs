@@ -12,9 +12,13 @@ namespace FriendsBase
 {
     public partial class MainForm : Form
     {
+        private SqlExecutor executor = new SqlExecutor();
+
         public MainForm()
         {
             InitializeComponent();
+
+            FriendsGridView.DataSource = executor.Select(Properties.Resources.selectFriends);
         }
     }
 }
