@@ -61,6 +61,15 @@ namespace FriendsBase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DELETE Znajomy WHERE Id_znajomego = @id.
+        /// </summary>
+        internal static string deleteZnajomy {
+            get {
+                return ResourceManager.GetString("deleteZnajomy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to INSERT INTO Znajomy(Imie_znajomego, Nazwisko_znajomego) VALUES(@name, @lastName).
         /// </summary>
         internal static string insertZnajomy {

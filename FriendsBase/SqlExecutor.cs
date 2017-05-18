@@ -54,7 +54,7 @@ namespace FriendsBase
         {
             if (id != 0)
             {
-                command = new SqlCommand("DELETE Znajomy where Id_znajomego = @id", connection);
+                command = new SqlCommand(Properties.Resources.deleteZnajomy, connection);
                 command.Parameters.AddWithValue("@id", id);
 
                 connection.Open();
