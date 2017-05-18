@@ -11,6 +11,16 @@ namespace FriendsBase
         private SqlCommand command;
         private SqlDataAdapter dataAdapter;
 
+        public SqlCommand GetCommand()
+        {
+            return command;
+        }
+
+        public SqlDataAdapter GetAdapter()
+        {
+            return dataAdapter;
+        }
+
         //public void InsertSubject(DataGridViewRow row)
         //{
         //    var comboBoxCell = row.Cells[8] as DataGridViewComboBoxCell;

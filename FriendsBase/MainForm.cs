@@ -14,6 +14,7 @@ namespace FriendsBase
     {
         private SqlExecutor executor = new SqlExecutor();
 
+
         public MainForm()
         {
             InitializeComponent();
