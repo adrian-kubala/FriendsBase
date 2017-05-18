@@ -46,7 +46,7 @@
             this.friendsGridView.AllowUserToOrderColumns = true;
             this.friendsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.friendsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.friendsGridView.Location = new System.Drawing.Point(24, 252);
+            this.friendsGridView.Location = new System.Drawing.Point(28, 224);
             this.friendsGridView.Name = "friendsGridView";
             this.friendsGridView.RowTemplate.Height = 33;
             this.friendsGridView.Size = new System.Drawing.Size(686, 428);
@@ -55,7 +55,7 @@
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(163, 172);
+            this.insertButton.Location = new System.Drawing.Point(163, 144);
             this.insertButton.Name = "insertButton";
             this.insertButton.Size = new System.Drawing.Size(149, 51);
             this.insertButton.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(341, 172);
+            this.updateButton.Location = new System.Drawing.Point(345, 144);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(149, 51);
             this.updateButton.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(516, 172);
+            this.deleteButton.Location = new System.Drawing.Point(516, 144);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(149, 51);
             this.deleteButton.TabIndex = 5;
@@ -102,7 +102,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 91);
+            this.label2.Location = new System.Drawing.Point(43, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 25);
             this.label2.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 725);
+            this.ClientSize = new System.Drawing.Size(738, 683);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
