@@ -41,6 +41,9 @@
             // 
             // friendsGridView
             // 
+            this.friendsGridView.AllowUserToAddRows = false;
+            this.friendsGridView.AllowUserToDeleteRows = false;
+            this.friendsGridView.AllowUserToOrderColumns = true;
             this.friendsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.friendsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.friendsGridView.Location = new System.Drawing.Point(24, 252);
