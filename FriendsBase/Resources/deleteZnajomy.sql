@@ -1,0 +1,1 @@
+DELETE Znajomy WHERE Id_znajomego = @id

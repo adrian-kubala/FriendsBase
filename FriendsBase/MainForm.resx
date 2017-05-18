@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="deleteZnajomy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deleteZnajomy.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
-  </data>
-  <data name="insertZnajomy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertZnajomy.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
-  </data>
-  <data name="selectFriends" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\selectFriends.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
-  </data>
-  <data name="socialMediaConnectionString" xml:space="preserve">
-    <value>Data Source=DESKTOP-VGF8T6A\MYSERVER;Initial Catalog=Portal_spolecznosciowy;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False</value>
-  </data>
-  <data name="updateZnajomy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updateZnajomy.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
-  </data>
 </root>
