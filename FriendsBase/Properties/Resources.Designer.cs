@@ -61,6 +61,15 @@ namespace FriendsBase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to INSERT INTO Znajomy(Imie_znajomego, Nazwisko_znajomego) VALUES(@name, @lastName).
+        /// </summary>
+        internal static string insertZnajomy {
+            get {
+                return ResourceManager.GetString("insertZnajomy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SELECT Id_znajomego as ID, Imie_znajomego as Imię, Nazwisko_znajomego as Nazwisko FROM Znajomy.
         /// </summary>
         internal static string selectFriends {

@@ -7,7 +7,7 @@ namespace FriendsBase
 {
     class SqlExecutor
     {
-        private SqlConnection connection = new SqlConnection(Properties.Resources.socialMediaConnectionString);
+        public SqlConnection connection = new SqlConnection(Properties.Resources.socialMediaConnectionString);
         private SqlCommand command;
         private SqlDataAdapter dataAdapter;
 

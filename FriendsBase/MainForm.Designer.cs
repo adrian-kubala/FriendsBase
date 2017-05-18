@@ -58,6 +58,7 @@
             this.insertButton.TabIndex = 1;
             this.insertButton.Text = "Wprowadź";
             this.insertButton.UseVisualStyleBackColor = true;
+            this.insertButton.Click += new System.EventHandler(this.insertButton_Click);
             // 
             // nameTextBox
             // 
