@@ -18,7 +18,7 @@ namespace FriendsBase
         {
             InitializeComponent();
 
-            FriendsGridView.DataSource = executor.Select(Properties.Resources.selectFriends);
+            friendsGridView.DataSource = executor.Select(Properties.Resources.selectFriends);
         }
     }
 }
