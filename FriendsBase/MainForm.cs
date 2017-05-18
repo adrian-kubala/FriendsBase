@@ -38,15 +38,7 @@ namespace FriendsBase
         {
             if (nameTextBox.Text != "" && lastNameTextBox.Text != "")
             {
-                var cmd = executor.GetCommand();
-                var conn = executor.connection;
-                cmd = new SqlCommand(Properties.Resources.insertZnajomy, executor.connection);
-                cmd.Parameters.AddWithValue("@name", nameTextBox.Text);
-                cmd.Parameters.AddWithValue("@lastName", lastNameTextBox.Text);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                executor.InsertFriend(nameTextBox.Text, lastNameTextBox.Text);
 
                 MessageBox.Show("Wprowadzanie powiodło się.");
                 DisplayData();
@@ -54,7 +46,7 @@ namespace FriendsBase
             }
             else
             {
-                MessageBox.Show("Please Provide Details!");
+                MessageBox.Show("Proszę wprowadzić wszystkie dane!");
             }
         }
 
