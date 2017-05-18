@@ -61,6 +61,15 @@ namespace FriendsBase.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SELECT Id_znajomego as ID, Imie_znajomego as Imię, Nazwisko_znajomego as Nazwisko FROM Znajomy.
+        /// </summary>
+        internal static string selectFriends {
+            get {
+                return ResourceManager.GetString("selectFriends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data Source=DESKTOP-VGF8T6A\MYSERVER;Initial Catalog=Portal_spolecznosciowy;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False.
         /// </summary>
         internal static string socialMediaConnectionString {
