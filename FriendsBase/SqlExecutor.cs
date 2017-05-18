@@ -50,7 +50,7 @@ namespace FriendsBase
             id = 0;
         }
 
-        internal bool Delete()
+        public bool Delete()
         {
             if (id != 0)
             {
