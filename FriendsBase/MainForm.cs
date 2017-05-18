@@ -57,5 +57,25 @@ namespace FriendsBase
             executor.id = 0;
         }
 
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            if (TextBoxesAreNotEmpty())
+            {
+                executor.UpdateFriend(nameTextBox.Text, lastNameTextBox.Text);
+
+                MessageBox.Show("Aktualizacja wpisu powiodła się.");
+                DisplayData();
+                ClearData();
+            }
+            else
+            {
+                MessageBox.Show("Proszę wybrać rekord w celu jego aktualizacji");
+            }
+        }
+
+        private bool TextBoxesAreNotEmpty()
+        {
+            return nameTextBox.Text != "" && lastNameTextBox.Text != "";
+        }
     }
 }
